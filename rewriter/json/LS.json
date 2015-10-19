@@ -1,0 +1,248 @@
+{
+	"logprog" : 
+	[
+		{
+			"hc_type": "log_spec",
+			"horn_clause": {
+				"head":{
+					"head_type": "pred",
+					"literal": {
+						"symbol_type": "user_defined",
+						"literal_type": "normal",
+						"literal_name": "loggedfunccall",
+						"args": [
+							{"arg":{"arg_type":"var", "arg_name": "T0"}},
+							{"arg":{"arg_type":"val", "arg_name": "getAllergies"}},
+							{"arg":{"arg_type":"var", "arg_name": "U0"}}
+						]
+					}
+				},
+				"body":[
+					{
+						"literal":{
+							"symbol_type": "user_defined",
+							"literal_type": "logevent_invocation",
+							"literal_name": "funccall",
+							"args": [
+								{"arg":{"arg_type":"var", "arg_name": "T0"}},
+								{"arg":{"arg_type":"val", "arg_name": "org.openmrs.api.PatientService#getAllergies"}},
+								{"arg":{"arg_type":"var", "arg_name": "U0"}}
+							]
+						}
+					},
+					{
+						"literal":{
+							"symbol_type": "user_defined",
+							"literal_type": "trigger_invocation",
+							"literal_name": "funccall",
+							"args": [
+								{"arg":{"arg_type":"var", "arg_name": "T1"}},
+								{"arg":{"arg_type":"val", "arg_name": "org.openmrs.module.retrosecurity.api.RetroSecurityService#breakTheGlass"}},
+								{"arg":{"arg_type":"var", "arg_name": "U1"}}
+							]
+						}
+					},
+					{
+						"literal":{
+							"symbol_type": "built_in",
+							"literal_type": "timestamp_ordering",
+							"literal_name": "@<",
+							"args": [
+								{"arg":{"arg_type":"var", "arg_name": "T1"}},
+								{"arg":{"arg_type":"var", "arg_name": "T0"}}
+							]
+						}
+					},
+					{
+						"literal":{
+							"symbol_type": "user_defined",
+							"literal_type": "trigger_invocation",
+							"literal_name": "funccall",
+							"args": [
+								{"arg":{"arg_type":"var", "arg_name": "T2"}},
+								{"arg":{"arg_type":"val", "arg_name": "org.openmrs.api.PatientService#getCountOfPatients"}},
+								{"arg":{"arg_type":"var", "arg_name": "U2"}},
+								{"arg":{"arg_type":"var", "arg_name": "X2"}}
+							]
+						}
+					},
+					{
+						"literal":{
+							"symbol_type": "built_in",
+							"literal_type": "timestamp_ordering",
+							"literal_name": "@<",
+							"args": [
+								{"arg":{"arg_type":"var", "arg_name": "T2"}},
+								{"arg":{"arg_type":"var", "arg_name": "T0"}}
+							]
+						}
+					},
+					{
+						"literal":{
+							"symbol_type": "user_defined",
+							"literal_type": "trigger_invocation",
+							"literal_name": "funccall",
+							"args": [
+								{"arg":{"arg_type":"var", "arg_name": "T3"}},
+								{"arg":{"arg_type":"val", "arg_name": "org.openmrs.api.PatientService#getPatients"}},
+								{"arg":{"arg_type":"var", "arg_name": "U3"}},
+								{"arg":{"arg_type":"var", "arg_name": "X3"}},
+								{"arg":{"arg_type":"var", "arg_name": "Y3"}},
+								{"arg":{"arg_type":"var", "arg_name": "Z3"}}
+							]
+						}
+					},
+					{
+						"literal":{
+							"symbol_type": "built_in",
+							"literal_type": "timestamp_ordering",
+							"literal_name": "@<",
+							"args": [
+								{"arg":{"arg_type":"var", "arg_name": "T3"}},
+								{"arg":{"arg_type":"var", "arg_name": "T0"}}
+							]
+						}
+					},
+					{
+						"literal":{
+							"symbol_type": "user_defined",
+							"literal_type": "trigger_invocation",
+							"literal_name": "funccall",
+							"args": [
+								{"arg":{"arg_type":"var", "arg_name": "T4"}},
+								{"arg":{"arg_type":"val", "arg_name": "org.openmrs.api.PatientService#getPatientOrPromotePerson"}},
+								{"arg":{"arg_type":"var", "arg_name": "U4"}},
+								{"arg":{"arg_type":"var", "arg_name": "X4"}}
+							]
+						}
+					},
+					{
+						"literal":{
+							"symbol_type": "built_in",
+							"literal_type": "timestamp_ordering",
+							"literal_name": "@<",
+							"args": [
+								{"arg":{"arg_type":"var", "arg_name": "T4"}},
+								{"arg":{"arg_type":"var", "arg_name": "T0"}}
+							]
+						}
+					},
+					{
+						"literal":{
+							"symbol_type": "user_defined",
+							"literal_type": "trigger_invocation",
+							"literal_name": "funccall",
+							"args": [
+								{"arg":{"arg_type":"var", "arg_name": "T5"}},
+								{"arg":{"arg_type":"val", "arg_name": "org.openmrs.api.PatientService#getAllPatientIdentifierTypes"}},
+								{"arg":{"arg_type":"var", "arg_name": "U5"}}
+							]
+						}
+					},
+					{
+						"literal":{
+							"symbol_type": "built_in",
+							"literal_type": "timestamp_ordering",
+							"literal_name": "@<",
+							"args": [
+								{"arg":{"arg_type":"var", "arg_name": "T5"}},
+								{"arg":{"arg_type":"var", "arg_name": "T0"}}
+							]
+						}
+					},
+					{
+						"literal":{
+							"symbol_type": "user_defined",
+							"literal_type": "trigger_invocation",
+							"literal_name": "funccall",
+							"args": [
+								{"arg":{"arg_type":"var", "arg_name": "T6"}},
+								{"arg":{"arg_type":"val", "arg_name": "org.openmrs.api.PatientService#getPatient"}},
+								{"arg":{"arg_type":"var", "arg_name": "U6"}},
+								{"arg":{"arg_type":"var", "arg_name": "X6"}}
+							]
+						}
+					},
+					{
+						"literal":{
+							"symbol_type": "built_in",
+							"literal_type": "timestamp_ordering",
+							"literal_name": "@<",
+							"args": [
+								{"arg":{"arg_type":"var", "arg_name": "T6"}},
+								{"arg":{"arg_type":"var", "arg_name": "T0"}}
+							]
+						}
+					},
+					{
+						"literal":{
+							"symbol_type": "built_in",
+							"literal_type": "extra_cond",
+							"literal_name": "@<",
+							"args": [
+								{"arg":{"arg_type":"var", "arg_name": "T1"}},
+								{"arg":{"arg_type":"var", "arg_name": "T2"}}
+							]
+						}
+					},
+					{
+						"literal":{
+							"symbol_type": "built_in",
+							"literal_type": "extra_cond",
+							"literal_name": "@=",
+							"args": [
+								{"arg":{"arg_type":"var", "arg_name": "U1"}},
+								{"arg":{"arg_type":"val", "arg_name": "admin"}}
+							]
+						}
+					},
+					{
+						"literal":{
+							"symbol_type": "built_in",
+							"literal_type": "extra_cond",
+							"literal_name": "@<",
+							"args": [
+								{"arg":{"arg_type":"var", "arg_name": "X4"}},
+								{"arg":{"arg_type":"var", "arg_name": "Z3"}}
+							]
+						}
+					},
+					{
+						"literal":{
+							"symbol_type": "built_in",
+							"literal_type": "extra_cond",
+							"literal_name": "@=",
+							"args": [
+								{"arg":{"arg_type":"var", "arg_name": "U4"}},
+								{"arg":{"arg_type":"val", "arg_name": "admin"}}
+							]
+						}
+					},
+					{
+						"literal":{
+							"symbol_type": "built_in",
+							"literal_type": "extra_cond",
+							"literal_name": "@=",
+							"args": [
+								{"arg":{"arg_type":"var", "arg_name": "U0"}},
+								{"arg":{"arg_type":"var", "arg_name": "U4"}}
+							]
+						}
+					},
+					{
+						"literal":{
+							"symbol_type": "built_in",
+							"literal_type": "extra_cond",
+							"literal_name": "@=",
+							"args": [
+								{"arg":{"arg_type":"val", "arg_name": "admin"}},
+								{"arg":{"arg_type":"var", "arg_name": "U6"}}
+							]
+						}
+					}
+				]
+			}
+		}
+
+	]
+}

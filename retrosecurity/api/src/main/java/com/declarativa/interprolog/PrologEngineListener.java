@@ -1,0 +1,21 @@
+/* 
+Author: Miguel Calejo
+Contact: info@interprolog.com, www.interprolog.com
+Copyright InterProlog Consulting / Renting Point Lda, Portugal 2014
+Use and distribution, without any warranties, under the terms of the
+Apache License, as per http://www.apache.org/licenses/LICENSE-2.0.html
+*/
+package com.declarativa.interprolog;
+/** If you're interested in an engine's overall activity textual output, implement this interface on your class and make your 
+object a listener to a PrologEngine. 
+*/
+public interface PrologEngineListener {
+	/** Prolog is asking the Java layer permission to continue; return nonnull (a reason/message) if you want to abort the Prolog computation.
+	During execution of this method you can call Prolog goals, say to introspect system state etc. */
+	public String willWork(PrologEngine source);
+	/** The Java side is starting processing a javaMessage Prolog goal (callback) request */
+	public void javaMessaged(PrologEngine source);
+	/** The value of isAvailable() has changed. Use source.isAvailable() to get the value. 
+	This is currently fired only for SubprocessEngines */
+	public void availabilityChanged(PrologEngine source);
+}
