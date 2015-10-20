@@ -20,7 +20,7 @@ JSON SPECIFICATION
 
 The JSON file represents a logic program, i.e., a list of Horn clauses consisting of a head of the Horn clause, and the body of the Horn clause. The head comprises a a single literal and the body comprises a list of literals. 
 
-Each literal contains information about symbol type, literal type, literal name and a list of arguments. The symbol type represents whether the predicate symbol is user-defined or built-in in XSB. The literal name evidently shows the name of the predicate symbol. The literal type defines the role of the predicate in the horn clause. It could be a logging evenet invocation, a trigger invocation, timestamp comparison, extra condition, or normal type otherwise, e.g., in case it is defining the predicate in the head of the logging specification.
+Each literal contains information about symbol type, literal type, literal name and a list of arguments. The symbol type represents whether the predicate symbol is user-defined or built-in in XSB. The literal name evidently shows the name of the predicate symbol. The literal type defines the role of the predicate in the horn clause. It could be a logging event invocation, a trigger invocation, timestamp comparison, extra condition, or normal type otherwise, e.g., in case it is defining the predicate in the head of the logging specification.
 
 Each argument has a name and a type. The type shows whether the argument is a variable or a value.
 
